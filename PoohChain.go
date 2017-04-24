@@ -100,7 +100,7 @@ func (t *SimpleChaincode) read(stub shim.ChaincodeStubInterface, args []string) 
 	}
 
 
-	augStr := "PoohChain:" + string(valAsbytes);
+	augStr := fmt.Sprintf("[%s]:", key) + string(valAsbytes);
 
 
 
